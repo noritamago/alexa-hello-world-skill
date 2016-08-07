@@ -52,11 +52,16 @@ Details:
 
 ### Lambda setup on AWS Console
 
- After your skill zip file is uploaded, you need to associate "Alexa Skills Kit" as Trigger.  
+ After your skill zip file is uploaded, you need to associate with "Alexa Skills Kit" as Trigger.  
 
-### Skill setup on portal
-In order to test skill Alexa systems, we need to associate Lambda function  ARN and invocation name etc. at
-[Amazon Developer Console](https://developer.amazon.com/edw/home.html#/).
+### Complete Skill setup on [Amazon Developer Console](https://developer.amazon.com/edw/home.html#/)
+ After Lambda setup, we need to input following information on development portal
+
+ * Name
+ * Invocation Name
+ * [Intent Schema](assets/IntentSchema.json)　
+ * [Sample Utterances](assets/Utterances.txt)
+ * Endpoint - ARN which appears at AWS Console
 
 ##  Let's Ask Alexa !
 
