@@ -34,9 +34,7 @@ node_modules
 
 # ES5 script and lambda zip
 lib/*.js
-src/*.js
 src/*.map
-test/*.js
 test/*.map
 
 dist
