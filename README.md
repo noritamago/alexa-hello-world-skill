@@ -21,17 +21,17 @@ npm install
 
 You just extends AlexaSkill class and write intent handling and how Alexa respond content to user.  
 ```
-vi hello-world-skill.js
+vi test/hello-world-skill.js
 ```
 
-## Test Skill Code to AWS
+## Test Skill Code
 
 We can conduct unit test to mimic Alexa Intent. Similar test is available in AWS Console,    
 ```
 npm test
 ```
 
-## Deploy Skill Code
+## Deploy Skill Code to AWS
 
 using [node-aws-lambda](https://github.com/ThoughtWorksStudios/node-aws-lambda), zip skill code and deploy AWS lambda with following command
 ```
