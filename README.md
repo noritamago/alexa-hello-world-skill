@@ -3,6 +3,13 @@ boiler template for Alexa skill development by rewriting https://github.com/amzn
 
 ## About
 
+[Alexa SDK and sample](https://github.com/amzn/alexa-skills-kit-js) is written by ES5 and skill deployment isn't included [see this](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/deploying-a-sample-skill-to-aws-lambda#preparing-a-nodejs-sample-to-deploy-in-lambda).
+
+This alexa-hello-world-skill intend to show
+
+* write skill
+* test skill
+* deployment skill
 
 
 ## Install and Setup
@@ -10,14 +17,21 @@ boiler template for Alexa skill development by rewriting https://github.com/amzn
 npm install
 ```
 
-## Test skill code
+## Write Skill
+
+You just extends AlexaSkill class and write intent handling and how Alexa respond content to user.  
+```
+vi hello-world-skill.js
+```
+
+## Test Skill Code to AWS
 
 We can conduct unit test to mimic Alexa Intent. Similar test is available in AWS Console,    
 ```
 npm test
 ```
 
-## Deployment lambda
+## Deploy Skill Code
 
 using [node-aws-lambda](https://github.com/ThoughtWorksStudios/node-aws-lambda), zip skill code and deploy AWS lambda with following command
 ```
@@ -32,12 +46,18 @@ If you face with following error message, you need to go AWS console and put app
 Details:
 ```
 
-## Test skill
+## Setup Skill
 
-### Lambda
+### Lambda setup on AWS Console
 
  After your skill zip file is uploaded, you need to associate "Alexa Skills Kit" as Trigger.  
 
-### Skill setup
+### Skill setup on portal
 In order to test skill Alexa systems, we need to associate Lambda function  ARN and invocation name etc. at
 [Amazon Developer Console](https://developer.amazon.com/edw/home.html#/).
+
+## Test
+
+```
+Alexa, ask {your invocation name}
+```
