@@ -11,6 +11,7 @@ This alexa-hello-world-skill intend to show
 * test skill
 * deployment skill
 
+with ES2015 and better developent pipeline.
 
 ## Install and Setup
 ```
@@ -30,6 +31,7 @@ We can conduct unit test to mimic Alexa Intent. Similar test is available in AWS
 ```
 npm test
 ```
+We write any test cased using [mocha](https://mochajs.org/)
 
 ## Deploy Skill Code to AWS
 
@@ -56,8 +58,9 @@ Details:
 In order to test skill Alexa systems, we need to associate Lambda function  ARN and invocation name etc. at
 [Amazon Developer Console](https://developer.amazon.com/edw/home.html#/).
 
-## Test
+##  Let's Ask Alexa !
 
+If you finish following step, you can test your skill on your associated devices or portal site
 ```
 Alexa, ask {your invocation name}
 ```
